@@ -11,6 +11,7 @@ alert("Lets play rock paper scissors, type [R, P, or S] to confirm your choice."
 
 while(1 != 0){
     var playerChoice = prompt("What is your choice?");
+    playGame(playerChoice);
 
     if(!window.confirm("Wins:" + wins + "\nLosses: " + losses + "\nMatches Played: " + matchesPlayed + "\n\nDo you want to play again?")){
         break;
